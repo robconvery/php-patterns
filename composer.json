@@ -1,0 +1,25 @@
+{
+    "name": "robconvery/patterns",
+    "description": "PHP Patterns",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Robert Convery",
+            "email": "robconvery@me.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Patterns\\":"src/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}

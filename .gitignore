@@ -1,0 +1,8 @@
+# Dot Files
+.vagrant
+.idea
+.DS_Store
+.git
+.env
+
+vendor/
