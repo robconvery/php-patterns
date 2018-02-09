@@ -15,10 +15,9 @@ class EuroCalc
     public $rate=1;
     
     /**
-     * 
-     * @param type $productNow
-     * @param type $serviceNow
-     * @return type
+     * @param $productNow
+     * @param $serviceNow
+     * @return float
      */
     public function requestCalc($productNow, $serviceNow)
     {
@@ -29,7 +28,7 @@ class EuroCalc
     }
     
     /**
-     * @return decimal
+     * @return float
      */
     public function requestTotal()
     {
