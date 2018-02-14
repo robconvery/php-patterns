@@ -3,6 +3,7 @@
 namespace Patterns\Observer;
 
 use Patterns\Observer\IObserver;
+use Patterns\Observer\ISubject;
 
 class PatternObserver implements IObserver
 {
@@ -15,10 +16,11 @@ class PatternObserver implements IObserver
     }
 
     /**
-     * @param Subject $Subject
+     * @param \Patterns\Observer\ISubject $Subject
      */
-    public function update(Subject $Subject)
+    public function update(ISubject $Subject)
     {
-
+        echo $Subject->getMe() . ' ' . uniqid() . "\n";
     }
+
 }

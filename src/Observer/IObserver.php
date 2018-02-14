@@ -2,7 +2,9 @@
 
 namespace Patterns\Observer;
 
+use Patterns\Observer\ISubject;
+
 interface IObserver
 {
-    public function update(Subject $Subject);
+    public function update(ISubject $Subject);
 }

@@ -6,6 +6,7 @@ use Patterns\Observer\ISubject;
 
 class PatternSubject implements ISubject
 {
+    protected $me;
     private $observers = [];
 
     /**
@@ -32,10 +33,37 @@ class PatternSubject implements ISubject
         return $this;
     }
 
+    /**
+     * method notify
+     */
     public function notify()
     {
         foreach($this->observers as $observer) {
             $observer->update($this);
         }
+    }
+
+    /**
+     * @param mixed $value
+     * @throws RuntimeException
+     * @return $this
+     */
+    public function updateMe($value)
+    {
+        if (!is_numeric($value) && !is_string($value)) {
+            throw new \RuntimeException('Invalid variable type');
+        }
+
+        $this->me = $value;
+        $this->notify();
+        return $this;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMe()
+    {
+        return $this->me;
     }
 }
