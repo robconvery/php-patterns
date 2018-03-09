@@ -7,12 +7,11 @@ namespace Patterns\Prototype;
  *
  * @author robertconvery
  */
-abstract class Prototype 
+abstract class Prototype
 {
     public $eyeColour;
     public $wingBeat;
     public $unitEyes;
     
-    abstract function __clone();
-   
+    abstract public function __clone();
 }

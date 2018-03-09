@@ -11,18 +11,17 @@ use Patterns\Command\Document;
  * @author robertconvery
  */
 
-class OpenCommand implements ICommand 
-{   
+class OpenCommand implements ICommand
+{
+
     /**
-     * Method execute 
+     * Method execute
      * @return string
      */
-    public function execute() 
+    public function execute()
     {
         $document = new Document();
         // ask user about document
         return $document->open();
     }
-           
-    
 }

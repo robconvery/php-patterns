@@ -27,18 +27,18 @@ class MessageGateway implements IMessageGateway
      * @param type $message
      * @param array $args
      */
-    private function send($message, array $args) 
+    private function send($message, array $args)
     {
         // validation goes here
         $this->messageSender->send();
     }
     
     /**
-     * Send a standard message... 
+     * Send a standard message...
      * @param type $message
      * @param array $args
      */
-    public function sendMessage($message, array $args) 
+    public function sendMessage($message, array $args)
     {
         $this->send($message, $args);
     }

@@ -4,15 +4,15 @@ namespace Patterns\BasicPatterns\Gateway;
 
 /**
  * This is our external message sender used by the
- * MessageGateway  
+ * MessageGateway
  *
  * @author robertconvery
  */
 
-class ExternalMessageSender 
+class ExternalMessageSender
 {
     public function send()
     {
-        // sendinding message; 
+        // sendinding message;
     }
 }

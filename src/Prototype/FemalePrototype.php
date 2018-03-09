@@ -11,15 +11,23 @@ use Patterns\Prototype\Prototype;
  */
 class FemalePrototype extends Prototype
 {
-    const gender = 'FEMALE';
+    const GENDER = 'FEMALE';
     public $fecundity;
-    
-    public function __construct() 
+
+    /**
+     * FemalePrototype constructor.
+     */
+    public function __construct()
     {
         $this->eyeColour = 'red';
         $this->wingBeat = '220';
         $this->unitEyes = '760';
     }
-    
-    function __clone() {}
+
+    /**
+     * clone method
+     */
+    public function __clone()
+    {
+    }
 }

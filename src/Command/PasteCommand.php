@@ -18,7 +18,7 @@ class PasteCommand implements ICommand
      * Method constructor
      * @param $receiver
      */
-    public function __construct($receiver) 
+    public function __construct($receiver)
     {
         $this->receiver = $receiver;
     }
@@ -27,7 +27,7 @@ class PasteCommand implements ICommand
      * Method execute
      * @return string
      */
-    public function execute() 
+    public function execute()
     {
         return $this->receiver->paste();
     }

@@ -11,16 +11,23 @@ use Patterns\Prototype\Prototype;
  */
 class MalePrototype extends Prototype
 {
-    const gender = 'MALE';
+    const GENDER = 'MALE';
     public $mated;
-    
-    public function __construct() 
+
+    /**
+     * MalePrototype constructor.
+     */
+    public function __construct()
     {
         $this->eyeColour = 'red';
         $this->wingBeat = '220';
         $this->unitEyes = '760';
     }
-    
-    function __clone() {}
-    
+
+    /**
+     * clone method
+     */
+    public function __clone()
+    {
+    }
 }

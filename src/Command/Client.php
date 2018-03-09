@@ -12,9 +12,9 @@ use Patterns\Command\PasteCommand;
  * @author robertconvery
  */
 
-class Client 
+class Client
 {
-    public function __construct() 
+    public function __construct()
     {
         $document = new Document;
         
@@ -23,6 +23,5 @@ class Client
         
         $open = new OpenCommand();
         $open->execute();
-       
     }
 }

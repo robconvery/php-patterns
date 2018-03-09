@@ -12,12 +12,12 @@ use Patterns\Adapter\ITarget;
  * @author robertconvery
  */
 
-class Tester 
+class Tester
 {
     private $requestNow;
     private $dollarRequest;
     
-    public function __construct() 
+    public function __construct()
     {
         $this->requestNow = new EuroAdapter();
         $this->dollarRequest = new DollarCalc();
@@ -29,11 +29,11 @@ class Tester
     
     private function makeAdapterRequest(ITarget $req)
     {
-        return $req->requestCalc(40,50);
+        return $req->requestCalc(40, 50);
     }
 
     private function makeDollarRequest(DollarCalc $req)
     {
-        return $req->requestCalc(40,50);
+        return $req->requestCalc(40, 50);
     }
 }

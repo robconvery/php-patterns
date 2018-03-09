@@ -7,7 +7,7 @@ namespace Patterns\Adapter;
  *
  * @author robertconvery
  */
-class EuroCalc 
+class EuroCalc
 {
     private $euro;
     private $product;

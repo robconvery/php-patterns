@@ -7,7 +7,7 @@ namespace Patterns\Command;
  * @author robertconvery
  */
 
-interface ICommand 
+interface ICommand
 {
     public function execute();
 }

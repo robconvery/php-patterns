@@ -10,24 +10,21 @@ namespace Patterns\Command;
 
 class Document
 {
-    public function open() 
+    public function open()
     {
         echo "Opened\n";
     }
     
     public function close()
     {
-        
     }
     
     public function cut()
     {
-        
     }
     
     public function copy()
     {
-        
     }
     
     public function paste()

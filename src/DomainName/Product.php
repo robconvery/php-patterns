@@ -30,6 +30,6 @@ class Product
 
     public static function newDatabase($name)
     {
-        return new static($name, new ThreeWayRecognitionStrategy(30,60) );
+        return new static($name, new ThreeWayRecognitionStrategy(30, 60));
     }
 }

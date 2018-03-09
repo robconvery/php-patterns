@@ -8,7 +8,7 @@ namespace Patterns\Command;
  * @author robertconvery
  */
 
-class Application 
+class Application
 {
     
 }

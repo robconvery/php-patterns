@@ -8,7 +8,6 @@
 
 namespace Patterns\DomainName;
 
-
 class Contract
 {
     private $product;
@@ -16,7 +15,7 @@ class Contract
     private $whenSigned;
     private $id;
 
-    public function __construct($product, $revenue=null, $whenSigned=null)
+    public function __construct($product, $revenue = null, $whenSigned = null)
     {
         $this->product = $product;
         $this->revenue = $revenue;
@@ -25,6 +24,5 @@ class Contract
 
     public function calculateRecognitions()
     {
-
     }
 }

@@ -12,7 +12,7 @@ use Patterns\Prototype\Prototype;
  * @author robertconvery
  */
 
-class Tester 
+class Tester
 {
     private $fly1;
     private $fly2;
@@ -21,7 +21,7 @@ class Tester
     private $c2fly;
     private $updatedCloneFly;
     
-    public function __construct() 
+    public function __construct()
     {
         $this->fly1 = new MalePrototype();
         $this->fly2 = new FemalePrototype();
@@ -43,7 +43,6 @@ class Tester
         $this->showFly($this->c1fly);
         $this->showFly($this->c2fly);
         $this->showFly($this->updatedCloneFly);
-        
     }
     
     private function showFly(Prototype $fly)
@@ -59,6 +58,5 @@ class Tester
         } else {
             echo 'Mated ' . $fly->mated . "\n";
         }
-        
     }
 }

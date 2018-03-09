@@ -12,15 +12,14 @@ use Patterns\Adapter\ITarget;
  */
 class EuroAdapter extends EuroCalc implements ITarget
 {
-    public function __construct() 
+    public function __construct()
     {
         $this->requester();
     }
     
-    public function requester() 
+    public function requester()
     {
         $this->rate=.8111;
         return $this->rate;
     }
-
 }

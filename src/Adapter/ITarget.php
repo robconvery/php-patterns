@@ -5,7 +5,7 @@ namespace Patterns\Adapter;
 /**
  * @author robertconvery
  */
-interface ITarget 
+interface ITarget
 {
     public function requester();
 }

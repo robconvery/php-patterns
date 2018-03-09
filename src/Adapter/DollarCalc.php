@@ -7,7 +7,7 @@ namespace Patterns\Adapter;
  *
  * @author robertconvery
  */
-class DollarCalc 
+class DollarCalc
 {
     private $dollar;
     private $product;
@@ -15,7 +15,7 @@ class DollarCalc
     public $rate=1;
     
     /**
-     * 
+     *
      * @param type $productNow
      * @param type $serviceNow
      * @return type
@@ -29,7 +29,7 @@ class DollarCalc
     }
     
     /**
-     * 
+     *
      * @return type
      */
     public function requestTotal()
@@ -37,5 +37,4 @@ class DollarCalc
         $this->euro *= $this->rate;
         return $this->euro;
     }
-
 }

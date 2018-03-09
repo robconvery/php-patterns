@@ -13,5 +13,4 @@ use Patterns\DomainName\Contract;
 interface RecognitionStrategy
 {
     public function calculateRevenueStrategy(Contract $contract);
-
 }
