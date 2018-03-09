@@ -25,7 +25,7 @@ class PatternSubject implements ISubject
      */
     public function detach(IObserver $Observer)
     {
-        foreach($this->observers as $key => $observer) {
+        foreach ($this->observers as $key => $observer) {
             if ($Observer == $observer) {
                 unset($this->observers[$key]);
             }
@@ -38,7 +38,7 @@ class PatternSubject implements ISubject
      */
     public function notify()
     {
-        foreach($this->observers as $observer) {
+        foreach ($this->observers as $observer) {
             $observer->update($this);
         }
     }

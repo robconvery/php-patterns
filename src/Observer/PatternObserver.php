@@ -12,7 +12,6 @@ class PatternObserver implements IObserver
      */
     public function __construct()
     {
-
     }
 
     /**
@@ -22,5 +21,4 @@ class PatternObserver implements IObserver
     {
         echo $Subject->getMe() . ' ' . uniqid() . "\n";
     }
-
 }
