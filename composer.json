@@ -23,11 +23,6 @@
         "laravel/homestead": "^7.3"
     },
     "autoload-dev": {
-        "classmap": [
-            "tests/TestCase.php"
-        ]
-    },
-    "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/"
         }
