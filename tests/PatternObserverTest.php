@@ -25,7 +25,7 @@ class PatternObserverTest extends TestCase
      */
     public function dataUpdateMeException()
     {
-        $class = new stdClass();
+        $class = new \stdClass();
         return [
             [[], 'An array isn\'t allowed'],
             [$class, 'An class isn\'t allowed'],
