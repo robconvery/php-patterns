@@ -1,5 +1,4 @@
 <?php
-
 namespace Patterns\Adapter;
 
 /**
@@ -13,28 +12,28 @@ class DollarCalc
     private $product;
     private $service;
     public $rate=1;
-    
+
     /**
      *
-     * @param type $productNow
-     * @param type $serviceNow
-     * @return type
+     * @param int $productNow
+     * @param int $serviceNow
+     * @return int
      */
     public function requestCalc($productNow, $serviceNow)
     {
         $this->product = $productNow;
         $this->service = $serviceNow;
-        $this->euro = $this->product + $this->service;
+        $this->dollar = $this->product + $this->service;
         return $this->requestTotal();
     }
     
     /**
      *
-     * @return type
+     * @return int
      */
     public function requestTotal()
     {
-        $this->euro *= $this->rate;
-        return $this->euro;
+        $this->dollar *= $this->rate;
+        return $this->dollar;
     }
 }

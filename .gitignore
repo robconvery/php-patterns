@@ -6,3 +6,7 @@
 .env
 
 vendor/
+after.sh
+Homestead.yaml
+Vagrantfile
+aliases

@@ -1,4 +1,5 @@
 <?php
+namespace Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -58,5 +59,4 @@ class PatternObserverTest extends TestCase
             [0, '0 should be a allowed'],
         ];
     }
-
 }
